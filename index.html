@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Reporsity AI</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <button id="newChat" class="new-chat">＋ New chat</button>
+    <div class="history-title">Chats</div>
+    <div id="chatList" class="chat-list"></div>
+    <div class="sidebar-footer">Reporsity AI</div>
+  </aside>
+
+  <main class="app">
+    <header class="topbar">
+      <div><strong>Reporsity AI</strong><span id="status">Connecting…</span></div>
+      <button id="clearAll" class="ghost">Clear chats</button>
+    </header>
+
+    <section id="messages" class="messages">
+      <div class="welcome">
+        <h1>How can I help?</h1>
+        <p>I explain my work, remember chats in this browser, and respond respectfully even when you're frustrated.</p>
+      </div>
+    </section>
+
+    <form id="composer" class="composer">
+      <textarea id="input" rows="1" placeholder="Message Reporsity AI…" autocomplete="off"></textarea>
+      <button id="send" type="submit">Send</button>
+    </form>
+    <p class="notice">Grok responses can be imperfect. Your Grok API key stays on the server when configured with .env.</p>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
